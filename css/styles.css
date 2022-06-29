@@ -78,14 +78,14 @@ body{
     width: 100%;
 }
 /* extra padding for bottom of main to match top */
-main{padding-bottom: 1em;}
+main{padding: 1em 0 1em 0;}
 /* nav styling and alignment */
 nav{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0em 1em 1em 1em;
+    padding: 1em 1em 2em 1em;
 }
 /* set header and footer colours  */
 header, footer{
@@ -101,8 +101,8 @@ nav a{
     color: var(--secondary-color);
     text-decoration: none;
 }
-/* nav link states (on first child to show current page is home) */
-nav a:hover, nav a:active, nav ul li:first-child{
+/* style a states (on first child to show current page is home) */
+a:hover, a:active, nav ul li:first-child{
     color: var(--tertiery-color);
     text-decoration: underline;
 }
