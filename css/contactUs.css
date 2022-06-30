@@ -38,7 +38,14 @@ section label, section p{
     font-size: 22px;
     color: var(--primary-color);
 }
-
+/* switch underline from home to about us */
+nav ul li:first-child{
+    text-decoration: none;
+}
+nav ul li:nth-child(5){
+    color: var(--tertiery-color);
+    text-decoration: underline;
+}
 /* message box styling */
 #yourmessage{
     margin: 0.25em 0 0.5em 0;
