@@ -1,0 +1,49 @@
+/* image sizing */
+img{
+    width: 100%;
+}
+/* table styling */
+table{
+    width: 100%;
+    text-align: center;
+}
+table, td, th{
+    border: 1px solid var(--primary-color);
+    padding: 1em;
+}
+th{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid black;
+    font-weight: bold;
+}
+td{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+/* wrapper width */
+.wrapper{
+    width: 97%;
+}
+/*  */
+img, iframe {
+    border: 4px solid var(--primary-color);
+    width: 100%;
+}
+/* match aspect ratio of img */
+iframe{
+    aspect-ratio: 1.6285;
+}
+
+/* switch underline from home to about us */
+nav ul li:first-child{
+    text-decoration: none;
+}
+nav ul li:nth-child(4){
+    color: var(--tertiery-color);
+    text-decoration: underline;
+}
+/* space between divs */
+.wrapper div{
+    padding: 0.5em 0 0.5em 0;
+}
