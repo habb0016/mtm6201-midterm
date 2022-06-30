@@ -11,21 +11,20 @@
     <link rel="stylesheet" href="css/contactUs.css">
 </head>
 <body>
-    <!-- wrapper for centering and alignment -->
+    <!-- header with site logo and nav bar -->
+    <header>
+        <nav class="wrapper">
+            <img src="images/Logo.png" alt="passion cakes logo" id="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="wrapper">
-        <!-- header with site logo and nav bar -->
-        <header>
-            <nav>
-                <img src="images/Logo.png" alt="passion cakes logo" id="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Location</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-        </header>
         <!-- main -->
         <main>
             <h2>Contact Us</h2>
@@ -54,6 +53,7 @@
             <section class="contact messageUs">
                 <h3>Message Us</h3>
                 <form>
+                    <!-- inputs except message will be 50% width on desktop and 100% mobile -->
                     <label for="name">Name:</label><br>
                     <input type="text" id="name" name="name" placeholder="Name"><br>
                     <label for="email">Email:</label><br>
@@ -61,15 +61,18 @@
                     <label for="subject">Subject:</label><br>
                     <input type="text" id="subject" name="subject" placeholder="Subject"><br>
                     <label for="yourmessage">Your message:</label><br>
-                    <textarea id="yourmessage" name="yourmessage" placeholder="Enter your message..."></textarea><br>
-                    <button type="submit">Send</button>
+                    <!-- always 100% width5 rows  -->
+                    <textarea id="yourmessage" name="yourmessage" rows="5" placeholder="Enter your message..."></textarea><br>
+                    <button id="send" type="submit">Send</button>
                 </form>
             </section>
         </main>
-        <footer>
+    </div>
+    <footer>
+        <div class="wrapper">
             <p>Images from <a href="https://pexels.com/">Pexels</a> & <a href="https://unsplashed.com">Unsplashed</a></p>
             <p>&copy; Copyright Passion Cakes, 2022</p>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 </html>
