@@ -1,0 +1,55 @@
+/* fixes overflow problem */
+nav {
+    padding: 0;
+}
+/* keep body 100% */
+body{
+    width: 100%;
+}
+h3{padding: 0.1em 0 0.01em;}
+/* placeholder styling */
+::placeholder{
+    color: var(--primary-color);
+
+}
+/* styles input fields */
+input {
+    width: 97%;
+    border: 2px solid var(--primary-color);
+}
+/* submit button styling */
+button{
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 0.5em 1em;
+    font-weight: bold;
+}
+/* set wrapper to 97% */
+.wrapper{
+    width: 97%;
+    margin: 0 auto;
+}
+nav ul {
+    padding-bottom: 1em;
+}
+/* styles labels and p in sections */
+section label, section p{
+    font-size: 22px;
+    color: var(--primary-color);
+}
+
+/* message box styling */
+#yourmessage{
+    margin: 0.25em 0 0.5em 0;
+    width: 97%;
+    border: 2px solid var(--primary-color);
+    /* no resize */
+    resize: none;
+}
+/* matching messagebox margins */
+#name, #email, #subject{
+    margin: 0.25em 0 0.5em 0;
+}
+
+
