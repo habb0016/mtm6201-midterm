@@ -1,24 +1,35 @@
-
+h2{
+    padding-bottom: 0.1em;
+}
 /* image full size and outlined */
 img{
     width: 100%;
     border: 4px solid var(--primary-color);
 }
-/* flex to center items */
-.aboutContent{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 /* wrapper center with small bleed */
 .wrapper{
     width: 97%;
     height: auto;
     margin: 0 auto;
 }
-/* styles section paragraph */
+/* styles section paragraphs */
 section p{
     color: var(--primary-color);
     padding: 0.5em 0 0.5em 0;
 }
-
+/* flex to center items */
+.aboutContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.25em;
+}
+/* switch underline from home to about us */
+nav ul li:first-child{
+    text-decoration: none;
+}
+nav ul li:nth-child(2){
+    color: var(--tertiery-color);
+    text-decoration: underline;
+}
