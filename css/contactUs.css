@@ -38,7 +38,7 @@ section label, section p{
     font-size: 22px;
     color: var(--primary-color);
 }
-/* switch underline from home to about us */
+/* switch underline from home to contact us */
 nav ul li:first-child{
     text-decoration: none;
 }
