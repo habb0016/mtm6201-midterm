@@ -70,6 +70,9 @@ a{font-size: 20px;}
 h1,h2,h3,h4,h5,h6{
     color: var(--primary-color);
 }
+img, iframe{
+    box-sizing: border-box;
+}
 /* style anchor tags */
 a{color: var(--background-main);}
 /* background for body (secondary colour) */
@@ -133,5 +136,6 @@ nav ul li{
 }
 #logo{
     width: 75%;
+    padding-bottom: 0.5em;
 }
 
