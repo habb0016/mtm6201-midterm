@@ -31,7 +31,6 @@ iframe{
 /* Centers content (iframe and image overflow for some reason) */
 .wrapper{
     width: 97%;
-    height: auto;
     margin: 0 auto;
 }
 /* switch underline from home to about us */

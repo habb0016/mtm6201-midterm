@@ -1,16 +1,7 @@
-/* fixes overflow problem */
-nav {
-    padding: 0;
-}
-/* keep body 100% */
-body{
-    width: 100%;
-}
 h3{padding: 0.1em 0 0.01em;}
 /* placeholder styling */
 ::placeholder{
     color: var(--primary-color);
-
 }
 /* styles input fields */
 input {
@@ -30,9 +21,6 @@ button{
     width: 97%;
     margin: 0 auto;
 }
-nav ul {
-    padding-bottom: 1em;
-}
 /* styles labels and p in sections */
 section label, section p{
     font-size: 22px;
@@ -51,7 +39,7 @@ nav ul li:nth-child(5){
     margin: 0.25em 0 0.5em 0;
     width: 97%;
     border: 2px solid var(--primary-color);
-    /* no resize */
+    /* disables resize */
     resize: none;
 }
 /* matching messagebox margins */
