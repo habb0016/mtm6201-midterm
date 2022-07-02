@@ -72,8 +72,10 @@ a{font-size: 20px;}
 h1,h2,h3,h4,h5,h6{
     color: var(--primary-color);
 }
-img, iframe{
-    box-sizing: border-box;
+/* use primary and tertiery color as highlight colors when text is selected */
+::selection{
+    background-color: var(--primary-color);
+    color: var(--tertiery-color);
 }
 /* style anchor tags */
 a{color: var(--background-main);}
@@ -138,6 +140,11 @@ nav ul li{
 .option h2, .option img{
     width: 100%;
     margin: 0;
+}
+/* use tertiery and primary color as highlight colors when text is selected in footer or nav */
+footer ::selection, nav ::selection{
+    background-color: var(--tertiery-color);
+    color: var(--primary-color);
 }
 #logo{
     width: 75%;
