@@ -31,3 +31,47 @@ nav ul li:nth-child(2){
     color: var(--tertiery-color);
     text-decoration: underline;
 }
+/* tablet media query min 768px */
+@media (min-width:768px) {
+    /* change width of main */
+    .wrapper:nth-child(2){
+        width: 90%;
+    }
+}
+/* media query for desktop min 992px */
+@media (min-width: 992px) {
+    /* aligns h3 with p section */
+    section h3{
+        margin-left: 50%;
+    }
+    /* flex to display section inline */
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    /* displays section p beside picture */
+    .aboutContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }    
+    /* styles p's beside img */
+    .aboutContent>div{
+        display: flex;
+        flex-direction: column;
+        /*  */
+        justify-content: space-between;
+        /* will match the height of img */
+        height:40vw;
+        /* to line up with h3 */
+        width: 50%;
+    }
+    /* removes padding */
+    section p {
+        padding: 0;
+    }
+    /* take 45% leaving 5% spacer to right */
+    section img{
+        width: 45%;
+    }
+}
