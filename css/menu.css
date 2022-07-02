@@ -29,3 +29,29 @@ nav ul li:nth-child(3){
     color: var(--tertiery-color);
     text-decoration: underline;
 }
+
+/* tablet media query 768px min-width */
+@media (min-width: 768px) {
+    /* make menu larger and centered */
+    .menu{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+/* tablet media query 992px min-width */
+@media (min-width: 992px) {
+    /* wrapper for menu categories */
+    .menu{
+        /* make menu smaller and centered */
+        width: 100%;
+        margin: 0 auto;
+        /* display flex to put categories inline */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /* Each column (category) takes 1/5 space */
+    .category{
+        width: 20%;
+    }
+}
