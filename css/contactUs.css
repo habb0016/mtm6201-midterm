@@ -1,4 +1,5 @@
-h3{padding: 0.1em 0 0.01em;}
+h2{padding: 0.1em 0 0.1em 0;}
+main{padding-top: 0;}
 /* placeholder styling */
 ::placeholder{
     color: var(--primary-color);
@@ -36,8 +37,9 @@ nav ul li:nth-child(5){
 }
 /* message box styling */
 #yourmessage{
+    /* size of box */
     margin: 0.25em 0 0.5em 0;
-    width: 97%;
+    width: 100%;
     border: 2px solid var(--primary-color);
     /* disables resize */
     resize: none;
@@ -45,6 +47,57 @@ nav ul li:nth-child(5){
 /* matching messagebox margins */
 #name, #email, #subject{
     margin: 0.25em 0 0.5em 0;
+    width: 100%;
+}
+/* form text size */
+#name, #email, #subject,#yourmessage{
+    font-size: 20px;
+}
+/* media query for tablet min-width 768px */
+@media (min-width: 768px) {
+    /* changes size of form text */
+    #name, #email, #subject,#yourmessage{
+        font-size: 18px;
+        /* adjust spacing to accomodate font size switch */
+        margin-top: 0.1em;
+    }
+}
+/* media query for desktop min-width 992px */
+@media (min-width: 992px) {
+    /* put main content in grid (3 row, 2 col) */
+    main{
+        display: grid;
+        grid-template-columns: 3fr 7fr;
+        /* same effect as space between for left column */
+        grid-template-rows: repeat(3, auto-fill);
+        grid-template-areas: 
+        "phone message"
+        "address message"
+        "email message";
+    }
+    /* grid areas for grid above */
+    /* phone grid area */
+    main section:first-child{
+        grid-area: phone;
+    }
+    /* Address grid area */
+    main section:nth-child(2){
+        grid-area: address;
+    }
+    /* email grid area */
+    main section:nth-child(3){
+        grid-area: email;
+    }
+    /* message us grid area */
+    main section:nth-child(4){
+        grid-area: message;
+    }
+    /* changes size of formtext */
+    #name, #email, #subject,#yourmessage{
+        font-size: 16px;
+        /* adjust spacing to accomodate font size switch */
+        margin-top: 0.1em;
+    }
 }
 
 

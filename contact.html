@@ -10,11 +10,12 @@
     <!-- apply style modifications from contactUs.css -->
     <link rel="stylesheet" href="css/contactUs.css">
 </head>
-<body>
+<!-- pageWrapper applies display of flex to nav, main and footer + space evenly  -->
+<body class="pageWrapper">
     <!-- header with site logo and nav bar -->
     <header>
         <!-- navigation uses same logo on mobile and desktop -->
-        <nav>
+        <nav class="wrapper">
             <img src="images/Logo.png" alt="passion cakes logo" id="logo">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -28,8 +29,8 @@
     <!-- wrapper for centering and flex -->
     <div class="wrapper">
         <!-- main -->
+        <h2>Contact Us</h2>
         <main>
-            <h2>Contact Us</h2>
             <!-- phone information -->
             <section class="phone contact">
                 <h3>Phone</h3>
@@ -39,7 +40,7 @@
                 <p>613-444-4444</p>
             </section>
             <!-- address information -->
-            <section class="Address contact">
+            <section class="addr contact">
                 <h3>Address</h3>
                 <p>Downtown</p>
                 <p># Street Name</p>
@@ -63,7 +64,7 @@
                     <label for="subject">Subject:</label><br>
                     <input type="text" id="subject" name="subject" placeholder="Subject"><br>
                     <label for="yourmessage">Your message:</label><br>
-                    <!-- always 100% width5 rows  -->
+                    <!-- always 100% width 5 rows  -->
                     <textarea id="yourmessage" name="yourmessage" rows="5" placeholder="Enter your message..."></textarea><br>
                     <button id="send" type="submit">Send</button>
                 </form>
