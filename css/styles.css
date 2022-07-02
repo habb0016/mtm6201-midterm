@@ -57,6 +57,8 @@ table {
     --tertiery-color: #90EE90;
     --background-main: #CEF6CE;  
 }
+/* fixes overflow issue */
+*{box-sizing: border-box;}
 /* font size set up */
 h1{font-size: 42px;}
 h2{font-size: 38px;}
@@ -140,5 +142,101 @@ nav ul li{
 #logo{
     width: 75%;
     padding-bottom: 0.5em;
+}
+/* tablet media query min 768px */
+@media (min-width:768px) {
+    /* make nav inline */
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items:flex-end;
+        justify-content: space-between;
+        width: 100%;
+        /* removes padding from mobile */
+        padding: 0;
+    }
+    /* styles footer */
+    footer{
+        padding: 1.5em 0;
+    }
+    .wrapper{
+        width: 97%;
+    }
+    /* display options horizontally */
+    .options{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* each option takes 1/2 space on tablet */
+    .option{
+        width: 50%;
+    }
+    /* nav items inline */
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+
+    }
+    /* logo 1/4 size to fit nav properly */
+    #logo{
+        width: 25%;
+    }
+
+}
+
+/* desktop media query at 992px+  */
+@media (min-width:992px) {
+    /* make nav inline */
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items:flex-end;
+        justify-content: space-between;
+        width: 100%;
+        /* removes padding from mobile */
+        padding: 0;
+    }
+    /* styles footer */
+    footer{
+        padding: 1.5em 0;
+    }
+    /* for index only, evenly distribute header, main and footer */
+    .pageWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* sets height the height of the screen */
+        height: 100vh;
+    }
+    /* 90% site wide on non mobile media queries */
+    .wrapper{
+        width: 90%;
+    }
+    /* flex to align and justify content to space */
+    .options{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 2em;
+    }
+    /* each option takes 3/10 space */
+    .option{
+        width: 30%;
+    }
+    /* nav items inline */
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+
+    }
+    /* logo 1/4 size to fit nav properly */
+    #logo{
+        width: 25%;
+    }
+
 }
 
