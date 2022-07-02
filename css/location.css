@@ -42,4 +42,37 @@ nav ul li:nth-child(4){
     text-decoration: underline;
 }
 
+/* media query for tablet min-width 768px */
+@media (min-width: 768px) {
+    /* main content styling */
+    main {
+        padding: 1em 0 1em 0;
+    }
+    /* wrapper width */
+    .wrapper{
+        width: 90%;
+    }
+
+}
+/* media query for desktop min-width 992px */
+@media (min-width: 992px) {
+    /* grid areas for grid template areas */
+    .address{grid-area: address;}
+    .hours{grid-area: hours;}
+    .map{grid-area: map;}
+    /* display of grid (row 1: address and map, row 2: hours) */
+    .locationContent{
+        display: grid;
+        /* 2 col 2 rows grid */
+        grid-template-columns: 1fr 1fr;
+        /* second row auto size to remove space on bottom */
+        grid-template-rows:  1fr auto-fill;
+        grid-template-areas: "address map"
+        "hours hours";
+        /* space between grid items */
+        grid-gap: 3em;
+    }
+
+
+}
 
