@@ -1,12 +1,13 @@
-
-main{padding-top: 0;
-margin-top: 0;}
+main{
+    padding-top: 0;
+    margin-top: 0;
+}
 /* placeholder styling */
 ::placeholder{
     color: var(--primary-color);
 }
 /* styles input fields */
-form input {
+input {
     width: 100%;
     border: 2px solid var(--primary-color);
 }
@@ -36,7 +37,6 @@ nav ul li:nth-child(5){
     color: var(--tertiery-color);
     text-decoration: underline;
 }
-#logo{padding: 0;}
 /* message box styling */
 #yourmessage{
     /* size of box */
@@ -102,7 +102,7 @@ nav ul li:nth-child(5){
     #name, #email, #subject,#yourmessage{
         font-size: 16px;
         /* adjust spacing to accomodate font size switch */
-        margin-top: 0.1em;
+        margin-top: 0.25em;
     }
 }
 
