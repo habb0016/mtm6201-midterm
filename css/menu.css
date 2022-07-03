@@ -1,13 +1,12 @@
 h2{padding-bottom: 0.1em;}
-/* styles images */
-img{
+/* styles images (not logo) */
+main img{
     width: 100%;
-    display: block;
     border: 4px solid var(--primary-color);
 }
 /* center content  */
 .wrapper{
-    width: 90%;
+    width: 97%;
     margin: 0 auto;
 }
 /* puts name and price on same line (space between) */
@@ -32,17 +31,21 @@ nav ul li:nth-child(3){
 
 /* tablet media query 768px min-width */
 @media (min-width: 768px) {
-    /* make menu larger and centered */
+    /* wrapper width tablet */
+    .wrapper{width: 95%;}
+    /* make menu centered */
     .menu{
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
 }
 /* tablet media query 992px min-width */
 @media (min-width: 992px) {
+    /* wrapper width desktop */
+    .wrapper{width: 90%;}
     /* wrapper for menu categories */
     .menu{
-        /* make menu smaller and centered */
+        /* make menu centered */
         width: 100%;
         margin: 0 auto;
         /* display flex to put categories inline */

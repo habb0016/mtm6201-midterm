@@ -1,12 +1,13 @@
-h2{padding: 0.1em 0 0.1em 0;}
-main{padding-top: 0;}
+
+main{padding-top: 0;
+margin-top: 0;}
 /* placeholder styling */
 ::placeholder{
     color: var(--primary-color);
 }
 /* styles input fields */
-input {
-    width: 97%;
+form input {
+    width: 100%;
     border: 2px solid var(--primary-color);
 }
 /* submit button styling */
@@ -35,6 +36,7 @@ nav ul li:nth-child(5){
     color: var(--tertiery-color);
     text-decoration: underline;
 }
+#logo{padding: 0;}
 /* message box styling */
 #yourmessage{
     /* size of box */
@@ -55,6 +57,8 @@ nav ul li:nth-child(5){
 }
 /* media query for tablet min-width 768px */
 @media (min-width: 768px) {
+    /* wrapper width tablet */
+    .wrapper{width: 95%;}
     /* changes size of form text */
     #name, #email, #subject,#yourmessage{
         font-size: 18px;
@@ -75,6 +79,8 @@ nav ul li:nth-child(5){
         "address message"
         "email message";
     }
+    /* desktop wrapper width */
+    .wrapper{width: 90%;}
     /* grid areas for grid above */
     /* phone grid area */
     main section:first-child{
