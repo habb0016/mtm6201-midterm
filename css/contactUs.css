@@ -1,3 +1,6 @@
+/* space before h2 */
+h2{padding-top: 0.5em;}
+/* remove padding and margin tops */
 main{
     padding-top: 0;
     margin-top: 0;
@@ -63,7 +66,7 @@ nav ul li:nth-child(5){
     #name, #email, #subject,#yourmessage{
         font-size: 18px;
         /* adjust spacing to accomodate font size switch */
-        margin-top: 0.1em;
+        margin-top: 0.25em;
     }
 }
 /* media query for desktop min-width 992px */
