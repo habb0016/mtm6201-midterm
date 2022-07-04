@@ -61,17 +61,35 @@ table {
 /* fixes overflow issue */
 *{box-sizing: border-box;}
 /* font size set up */
-h1{font-size: 42px;}
-h2{font-size: 38px;}
-h3{font-size: 34px;}
+h3{font-size: 32px;}
 h4{font-size: 30px;}
 h5{font-size: 26px;}
 h6{font-size: 22px;}
-p{font-size: 20px;}
-a{font-size: 20px;}
-/* set heading colours */
-h1,h2,h3,h4,h5,h6{
+/* google fonts */
+h1{
+    font-family: 'Cinzel', serif;
     color: var(--primary-color);
+    font-size: 42px;
+}
+h2{
+    font-family: 'Cinzel', serif;
+    color: var(--primary-color);
+    /* font isn't dark enough */
+    font-weight: bold;
+    font-size: 38px;
+}
+h3, h4, h5, h6{
+    font-family: 'Antic Didone', serif;
+    /* font isn't dark enough */
+    font-weight: bold;
+    color: var(--primary-color);
+}
+/* paragraphs links labels and placeholder default styling */
+p, a, label, ::placeholder{
+    font-family: 'Cormorant', serif;
+    /* font isn't dark enough */
+    font-weight: bold;
+    font-size: 20px;
 }
 /* use primary and tertiery color as highlight colors when text is selected */
 ::selection{
