@@ -63,8 +63,8 @@ nav ul li:nth-child(2){
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        /* will match the height of img */
-        height:40vw;
+        /* will match the height of img on tablet */
+        height:42.5vw;
         /* to line up with h3 */
         width: 50%;
     }
