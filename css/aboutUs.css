@@ -72,8 +72,12 @@ nav ul li:nth-child(2){
     section p {
         padding: 0;
     }
-    /* take 45% leaving 5% spacer to right */
+    /* take fit image 100% to its 45% width */
     section img{
+        width: 100%;
+    }
+    /* fixes sizing issue on desktop */
+    section picture{
         width: 45%;
     }
     /* logo 1/4 size to fit nav properly */
