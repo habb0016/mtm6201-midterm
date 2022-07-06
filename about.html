@@ -31,7 +31,35 @@
         <section class="about">
             <h3>At Passion Cakes,</h3>
             <div class="aboutContent">
-                <img src="images/cakeLady.png" alt="lady holding cake">
+                <!-- responsive pictures -->
+                <picture>
+                    <!-- source for 1600px min width 3 resolutions (square) -->
+                    <source srcset="images/cakeLady-1600_x_1600.png,
+                    images/cakeLady-3200_x_3200.png 2x,
+                    images/cakeLady-4800_x_4800.png 3x" media="(min-width: 1600px)">
+                    <!-- source for 1280px min width 3 resolutions (square) -->
+                    <source srcset="images/cakeLady-1280_x_1280.png,
+                    images/cakeLady-2560_x_2560.png 2x,
+                    images/cakeLady-3840_x_3840.png 3x" media="(min-width: 1280px)">
+                    <!-- source for 960px min width 3 resolutions (square) -->
+                    <source srcset="images/cakeLady-960_x_960.png,
+                    images/cakeLady-1920_x_1920.png 2x,
+                    images/cakeLady-2880_x_2880.png 3x" media="(min-width: 960px)">
+                    <!-- source for 720px min width 3 resolutions (square) -->
+                    <source srcset="images/cakeLady-720_x_720.png,
+                    images/cakeLady-1440_x_1440.png 2x,
+                    images/cakeLady-2160_x_2160.png 3x" media="(min-width: 720px)">      
+                    <!-- source for 480px min width 3 resolutions (square) -->
+                    <source srcset="images/cakeLady-480_x_480.png,
+                    images/cakeLady-960_x_960.png 2x,
+                    images/cakeLady-1440_x_1440.png 3x" media="(min-width: 480px)">
+                    <!-- source for 320px min width 3 resolutions (square) -->
+                    <source srcset="images/cakeLady-320_x_320.png,
+                    images/cakeLady-640_x_640.png 2x,
+                    images/cakeLady-960_x_960.png 3x" media="(min-width: 320px)"> 
+                    <!-- img in case above code doesn't work on the browser  -->
+                    <img src="images/cakeLady.png" alt="lady holding cake">
+                </picture>
                 <!-- div to use grid on desktop -->
                 <div class="article">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur doloremque deleniti amet repudiandae, distinctio architecto blanditiis. Cum perferendis tenetur, ducimus fuga magni, ipsam temporibus ratione iusto dolorem natus maiores debitis?</p>

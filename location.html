@@ -30,7 +30,36 @@
         <div class="wrapper locationContent">
             <div class="location address">
                 <h3>Address</h3>
-                <img src="images/storeFront.jpg" alt="picture of storefront">
+                <!-- responsive pictures -->
+                <picture>
+                    <!-- source for 1600px min width 3 resolutions (square) -->
+                    <source srcset="images/storeFront-1600_x_972.jpg,
+                    images/storeFront-3200_x_1945.jpg 2x,
+                    images/storeFront-4800_x_2918.jpg 3x" media="(min-width: 1600px)">
+                    <!-- source for 1280px min width 3 resolutions (square) -->
+                    <source srcset="images/storeFront-1280_x_778.jpg,
+                    images/storeFront-2560_x_1556.jpg 2x,
+                    images/storeFront-3840_x_2335.jpg 3x" media="(min-width: 1280px)">
+                    <!-- source for 960px min width 3 resolutions (square) -->
+                    <source srcset="images/storeFront-960_x_583.jpg,
+                    images/storeFront-1920_x_1167.jpg 2x,
+                    images/storeFront-2880_x_1751.jpg 3x" media="(min-width: 960px)">
+                    <!-- source for 720px min width 3 resolutions (square) -->
+                    <source srcset="images/storeFront-720_x_437.jpg,
+                    images/storeFront-1440_x_875.jpg 2x,
+                    images/storeFront-2160_x_1313.jpg 3x" media="(min-width: 720px)">      
+                    <!-- source for 480px min width 3 resolutions (square) -->
+                    <source srcset="images/storeFront-480_x_291.jpg,
+                    images/storeFront-960_x_583.jpg 2x,
+                    images/storeFront-1440_x_875.jpg 3x" media="(min-width: 480px)">
+                    <!-- source for 320px min width 3 resolutions (square) -->
+                    <source srcset="images/storeFront-320_x_194.jpg,
+                    images/storeFront-640_x_388.jpg 2x,
+                    images/storeFront-960_x_583.jpg 3x" media="(min-width: 320px)"> 
+                    <!-- img in case above code doesn't work on the browser  -->
+                    <img src="images/storeFront.jpg" alt="picture of storefront">
+                </picture>
+                
             </div>
             <div class="location map">
                 <h3>Map</h3>
