@@ -73,6 +73,8 @@ nav ul li:nth-child(5){
 @media (min-width: 992px) {
     /* put main content in grid (3 row, 2 col) */
     main{
+        /* padding fixes spilling issue on desktop */
+        padding-bottom: 3em;
         display: grid;
         grid-template-columns: 3fr 7fr;
         /* same effect as space between for left column */
@@ -100,6 +102,10 @@ nav ul li:nth-child(5){
     /* message us grid area */
     main section:nth-child(4){
         grid-area: message;
+    }
+    /* spacing for back to top button */
+    #btt{
+        margin-bottom: 1em;
     }
     /* changes size of formtext */
     #name, #email, #subject,#yourmessage{
