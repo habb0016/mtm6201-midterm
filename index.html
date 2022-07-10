@@ -13,9 +13,17 @@
 </head>
 <!-- class of pageWrapper to use flex (keeps body elements spaced evenly) -->
 <body class="pageWrapper">
+    <!-- adds skiplinks  -->
+    <ul class="skip-links">
+        <li><a href="#navigation">Skip to nav</a></li>
+        <li><a href="#newItems">Skip to new items</a></li>
+        <li><a href="#staffPicks">Skip to staff picks</a></li>
+        <li><a href="#popular">Skip to popular items</a></li>
+    </ul>
     <!-- header with site logo and nav bar -->
     <header>
-        <nav class="wrapper">
+        <!-- id of navigation for skip links -->
+        <nav class="wrapper" id="navigation">
             <img src="images/Logo.svg" alt="passion cakes logo" id="logo">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -31,7 +39,7 @@
         <!-- wrapper for width and options for flex on non-mobile media queries -->
         <div class="wrapper options">
         <!-- div for flex or grid -->
-            <div class="newItems option">
+            <div class="newItems option" id="newItems">
                 <h2>New Items</h2>
                 <a href="menu.html">
                     <!-- responsive pictures -->
@@ -66,7 +74,8 @@
                 </a>
             </div>
             <!-- staff picks requires padding on non-mobile -->
-            <div class="staffPicks option">
+            <!-- id of stffpicks for skiplinks -->
+            <div class="staffPicks option" id="staffPicks">
                 <h2>Staff Picks</h2>
                 <a href="menu.html">
                     <!-- responsive pictures -->
@@ -100,7 +109,8 @@
                     </picture> 
                 </a>
             </div>
-            <div class="popular option">
+            <!-- id of popular for skiplinks -->
+            <div class="popular option" id="popular">
                 <h2>Popular</h2>
                 <a href="menu.html">
                     <!-- responsive pictures -->

@@ -11,10 +11,18 @@
     <title>Menu-MTM6201-Midterm</title>
 </head>
 <body>
+    <!-- adds skiplinks  -->
+    <ul class="skip-links">
+        <li><a href="#navigation">Skip to nav</a></li>
+        <li><a href="#cakes">Skip to cakes</a></li>
+        <li><a href="#cupcakes">Skip to cupcakes</a></li>
+        <li><a href="#cakepops">Skip to cakepops</a></li>
+        <li><a href="#icecream">Skip to icecream cakes</a></li>
+    </ul>
     <!-- header with site logo and nav bar -->
     <header>
         <!-- wrapper for width and centering -->
-        <nav class="wrapper">
+        <nav class="wrapper" id="navigation">
             <img src="images/Logo.svg" alt="passion cakes logo" id="logo">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -33,7 +41,7 @@
             <!-- menu contains all items in all 4 categories for centering -->
             <div class="menu">
                 <!-- div categories for flex and grid -->
-                <div class="category cake">
+                <div class="category cake" id="cakes">
                     <h3>Cakes</h3>
                     <div class="item">
                         <!-- responsive pictures -->
@@ -145,7 +153,7 @@
                     </div>
                 </div>
                 <!-- cupcake section -->
-                <div class="category cupcakes">
+                <div class="category cupcakes" id="cupcakes">
                     <h3>Cupcakes</h3>
                     <div class="item">
                         <!-- responsive pictures -->
@@ -257,7 +265,7 @@
                     </div>
                 </div>
                 <!-- cakepops section -->
-                <div class="category cakepops">
+                <div class="category cakepops" id="cakepops">
                     <h3>Cake-Pops</h3>
                     <div class="item">
                         <!-- responsive pictures -->
@@ -369,7 +377,7 @@
                     </div>
                 </div>
                 <!-- icecream cake section -->
-                <div class="category icecream">
+                <div class="category icecream" id="icecream">
                     <h3>Icecream</h3>
                     <div class="item">
                         <!-- responsive pictures -->

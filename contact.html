@@ -12,10 +12,18 @@
 </head>
 <!-- pageWrapper applies display of flex to nav, main and footer + space evenly  -->
 <body class="pageWrapper">
+    <!-- adds skiplinks  -->
+    <ul class="skip-links">
+        <li><a href="#navigation">Skip to nav</a></li>
+        <li><a href="#phone">Skip to phone number</a></li>
+        <li><a href="#addr">Skip to address</a></li>
+        <li><a href="#emailAdd">Skip to email address</a></li>
+        <li><a href="#contactForm">Skip to contact form</a></li>
+    </ul>
     <!-- header with site logo and nav bar -->
     <header>
-        <!-- navigation uses same logo on mobile and desktop -->
-        <nav class="wrapper">
+        <!-- navigation uses same logo on mobile and desktop/ id of navigation for skiplinks -->
+        <nav class="wrapper" id="navigation">
             <img src="images/Logo.svg" alt="passion cakes logo" id="logo">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -31,31 +39,32 @@
         <!-- main -->
         <h2>Contact Us</h2>
         <main>
-            <!-- phone information -->
-            <section class="phone contact">
+            <!-- phone information/ id of phone for skiplinks -->
+            <section class="phone contact" id="phone">
                 <h3>Phone</h3>
                 <p>Shop:</p>
                 <p>613-555-5555</p>
                 <p>Customer Service:</p>
                 <p>613-444-4444</p>
             </section>
-            <!-- address information -->
-            <section class="addr contact">
+            <!-- address information/ id of addr for skiplinks -->
+            <section class="addr contact" id="addr">
                 <h3>Address</h3>
                 <p>Downtown</p>
                 <p># Street Name</p>
                 <p>Ottawa, ON</p>
                 <p>K1G 5P1</p>
             </section>
-            <!-- email information -->
-            <section class="emailAdd contact">
+            <!-- email information/ id of emailAdd for skiplinks -->
+            <section class="emailAdd contact" id="emailAdd">
                 <h3>Email</h3>
                 <p>info@passioncakes.ca</p>
             </section>
             <!-- section containing contact form -->
             <section class="contact messageUs">
                 <h3>Message Us</h3>
-                <form>
+                <!-- id of contactForm for skiplinks -->
+                <form id="contactForm">
                     <!-- inputs except message will be 50% width on desktop and 100% mobile -->
                     <label for="name">Name:</label><br>
                     <input type="text" id="name" name="name" placeholder="Name"><br>
