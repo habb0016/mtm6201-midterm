@@ -40,6 +40,10 @@ nav ul li:nth-child(5){
     color: var(--tertiery-color);
     text-decoration: underline;
 }
+/* spacing for back to top button */
+#btt{
+    margin-bottom: 1em;
+}
 /* message box styling */
 #yourmessage{
     /* size of box */
@@ -102,10 +106,6 @@ nav ul li:nth-child(5){
     /* message us grid area */
     main section:nth-child(4){
         grid-area: message;
-    }
-    /* spacing for back to top button */
-    #btt{
-        margin-bottom: 1em;
     }
     /* changes size of formtext */
     #name, #email, #subject,#yourmessage{
