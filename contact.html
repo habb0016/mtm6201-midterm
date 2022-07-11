@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/contactUs.css">
 </head>
 <!-- pageWrapper applies display of flex to nav, main and footer + space evenly  -->
-<body class="pageWrapper">
+<body class="pageWrapper" id="top">
     <!-- adds skiplinks  -->
     <ul class="skip-links">
         <li><a href="#navigation">Skip to nav</a></li>
@@ -23,7 +23,7 @@
     <!-- header with site logo and nav bar -->
     <header>
         <!-- navigation uses same logo on mobile and desktop/ id of navigation for skiplinks -->
-        <nav class="wrapper" id="navigation">
+        <nav class="wrapper" id="navigation" role="navigation" aria-label="Main">
             <img src="images/Logo.svg" alt="passion cakes logo" id="logo">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -37,34 +37,34 @@
     <!-- wrapper for centering and flex -->
     <div class="wrapper">
         <!-- main -->
-        <h2>Contact Us</h2>
+        <h2 role="heading" aria-level="2">Contact Us</h2>
         <main>
             <!-- phone information/ id of phone for skiplinks -->
-            <section class="phone contact" id="phone">
-                <h3>Phone</h3>
+            <section class="phone contact" id="phone" role="complementary">
+                <h3 role="heading" aria-level="3">Phone</h3>
                 <p>Shop:</p>
                 <p>613-555-5555</p>
                 <p>Customer Service:</p>
                 <p>613-444-4444</p>
             </section>
             <!-- address information/ id of addr for skiplinks -->
-            <section class="addr contact" id="addr">
-                <h3>Address</h3>
+            <section class="addr contact" id="addr" role="complementary">
+                <h3 role="heading" aria-level="3">Address</h3>
                 <p>Downtown</p>
                 <p># Street Name</p>
                 <p>Ottawa, ON</p>
                 <p>K1G 5P1</p>
             </section>
             <!-- email information/ id of emailAdd for skiplinks -->
-            <section class="emailAdd contact" id="emailAdd">
-                <h3>Email</h3>
+            <section class="emailAdd contact" id="emailAdd" role="complementary">
+                <h3 role="heading" aria-level="3">Email</h3>
                 <p>info@passioncakes.ca</p>
             </section>
             <!-- section containing contact form -->
-            <section class="contact messageUs">
-                <h3>Message Us</h3>
+            <section class="contact messageUs" role="main">
+                <h3 role="heading" aria-level="3">Message Us</h3>
                 <!-- id of contactForm for skiplinks -->
-                <form id="contactForm">
+                <form id="contactForm" role="form">
                     <!-- inputs except message will be 50% width on desktop and 100% mobile -->
                     <label for="name">Name:</label><br>
                     <input type="text" id="name" name="name" placeholder="Name"><br>
@@ -82,7 +82,7 @@
         <!-- back to top button in div for flex id of btt for back to top -->
         <div class="backTop"><a href="#top" id="btt">Back to top</a></div>
     </div>
-    <footer class="pageWrapper">
+    <footer class="pageWrapper" role="contentinfo">
         <!-- forces div to center in footer -->
         <div id="fixGap">
             <p>Images from <a href="https://pexels.com/">Pexels</a> & <a href="https://unsplash.com">Unsplash</a></p>

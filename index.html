@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Cinzel:wght@700&family=Cormorant:wght@700&family=Lobster&display=swap" rel="stylesheet">
 </head>
 <!-- class of pageWrapper to use flex (keeps body elements spaced evenly) -->
-<body class="pageWrapper">
+<body class="pageWrapper" id="top">
     <!-- adds skiplinks  -->
     <ul class="skip-links">
         <li><a href="#navigation">Skip to nav</a></li>
@@ -23,7 +23,7 @@
     <!-- header with site logo and nav bar -->
     <header>
         <!-- id of navigation for skip links -->
-        <nav class="wrapper" id="navigation">
+        <nav class="wrapper" id="navigation" role="navigation" aria-label="Main">
             <img src="images/Logo.svg" alt="passion cakes logo" id="logo">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -37,10 +37,10 @@
     <!-- main -->
     <main>
         <!-- wrapper for width and options for flex on non-mobile media queries -->
-        <div class="wrapper options">
+        <div class="wrapper options" role="main">
         <!-- div for flex or grid -->
             <div class="newItems option" id="newItems">
-                <h2>New Items</h2>
+                <h2 role="heading" aria-level="2">New Items</h2>
                 <a href="menu.html">
                     <!-- responsive pictures -->
                     <picture>
@@ -76,7 +76,7 @@
             <!-- staff picks requires padding on non-mobile -->
             <!-- id of stffpicks for skiplinks -->
             <div class="staffPicks option" id="staffPicks">
-                <h2>Staff Picks</h2>
+                <h2 role="heading" aria-level="2">Staff Picks</h2>
                 <a href="menu.html">
                     <!-- responsive pictures -->
                     <picture>
@@ -111,7 +111,7 @@
             </div>
             <!-- id of popular for skiplinks -->
             <div class="popular option" id="popular">
-                <h2>Popular</h2>
+                <h2 role="heading" aria-level="2">Popular</h2>
                 <a href="menu.html">
                     <!-- responsive pictures -->
                     <picture>
@@ -148,7 +148,7 @@
         <!-- back to top button in div for flex id of btt for back to top -->
         <div class="backTop"><a href="#top" id="btt">Back to top</a></div>
     </main>
-    <footer>
+    <footer role="contentinfo">
         <p>Images from <a href="https://pexels.com/">Pexels</a> & <a href="https://unsplash.com">Unsplash</a></p>
         <p>&copy; Copyright Passion Cakes, 2022</p>
     </footer>    
