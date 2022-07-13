@@ -48,12 +48,13 @@
                 <p>613-444-4444</p>
             </section>
             <!-- address information/ id of addr for skiplinks -->
-            <section class="addr contact" id="addr" role="complementary">
+            <!-- added schema (address)  -->
+            <section class="addr contact" id="addr" role="complementary" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                 <h3 role="heading" aria-level="3">Address</h3>
-                <p>Downtown</p>
-                <p># Street Name</p>
-                <p>Ottawa, ON</p>
-                <p>K1G 5P1</p>
+                <p itemprop="name">Passion Cakes</p>
+                <p itemprop="streetAddress">70 Phalse Street</p>
+                <p itemprop="addressLocality">Ottawa, ON</p>
+                <p itemprop="postalCode">K1G 5P1</p>
             </section>
             <!-- email information/ id of emailAdd for skiplinks -->
             <section class="emailAdd contact" id="emailAdd" role="complementary">
